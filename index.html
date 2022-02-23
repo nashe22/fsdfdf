@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Nayelis</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#"><!--
+
+    theme #42: not alone  by  pirateskinned
+    
+    please don't:  edit & repost / claim as your own
+    please don't:  delete or move the credit
+    please don't:  steal bits of coding
+    
+    if you need any help, feel free to
+    message me at pirateskinned.tumblr.com
+    
+    ------
+    
+    image wrapping inspired by iniziare.tumblr.com
+    tumblr controls styling by cyantists.tumblr.com
+    icon font by suiomi.com/font
+    
+    ------
+    
+    muses popup formatting:
+    
+    copy & paste the following code for every muse.
+    
+    <a href="URL_HERE" title="muse name"><img src="URL_HERE"></a>
+
+--><title>can you feel not alone?</title><style>figure{margin:0}.tmblr-iframe{position:absolute}.tmblr-iframe.hide{display:none}.tmblr-iframe--amp-cta-button{visibility:hidden;position:fixed;bottom:10px;left:50%;transform:translateX(-50%);z-index:100}.tmblr-iframe--amp-cta-button.tmblr-iframe--loaded{visibility:visible;animation:iframe-app-cta-transition .2s ease-out}</style><link rel="shortcut icon" href="https://64.media.tumblr.com/d2b656fd6e467b24191739fa82bce487/fbf8e3effe1ead82-71/s128x128u_c1/d10f53f1c0947a7c933cf91c57e5aa076e2ac732.pnj"><!-- meta tags --><meta name="image:background" content=""/><meta name="image:sidebar" content=""/><meta name="image:about" content=""/><meta name="image:song cover" content=""/><meta name="color:background" content="#ffffff"/><meta name="color:container" content="#fafafa"/><meta name="color:posts" content="#ffffff"/><meta name="color:border" content="#eeeeee"/><meta name="color:text" content="#4f4e4e"/><meta name="color:accent one" content="#99b5b8"/><meta name="color:accent two" content="#bdb197"/><meta name="color:accent three" content="#b47f5f"/><meta name="if:background pattern" content="0"/><meta name="if:image wrap" content="1"/><meta name="if:500px posts" content="0"/><meta name="if:about popup" content="0"/><meta name="if:muses popup" content="0"/><meta name="if:navigation popup" content="0"/><meta name="select:fontsize" content="11px" title="11px"><meta name="select:fontsize" content="12px" title="12px"><meta name="select:fontsize" content="13px" title="13px"><meta name="select:fontsize" content="14px" title="14px"><meta name="select:fontsize" content="15px" title="15px"><meta name="text:about title" content="about title here" /><meta name="text:about text" content="about text here" /><meta name="text:song title" content="song title" /><meta name="text:song artist" content="song artist" /><meta name="text:muses" content="formatting can be found at the top of the code" /><meta name="text:nav title" content="navigation title here" /><meta name="text:link 1 url" content="/" /><meta name="text:link 1 title" content="link one" /><meta name="text:link 2 url" content="/" /><meta name="text:link 2 title" content="link two" /><meta name="text:link 3 url" content="/" /><meta name="text:link 3 title" content="link three" /><meta name="text:link 4 url" content="/" /><meta name="text:link 4 title" content="link four" /><meta name="text:link 5 url" content="/" /><meta name="text:link 5 title" content="link five" /><meta name="text:link 6 url" content="/" /><meta name="text:link 6 title" content="link six" /><meta name="text:link 7 url" content="/" /><meta name="text:link 7 title" content="link seven" /><meta name="text:link 8 url" content="/" /><meta name="text:link 8 title" content="link eight" /><!-- scripts --><link href="https://static.tumblr.com/qudkd6d/OcDnl99gb/style.css" rel="stylesheet" type="text/css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><!-- fonts --><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;500&display=swap" rel="stylesheet"><!-- icon font -- http://suiomi.com/font --><link href="//solrainha.github.io/saturnicons/saturnicons.css" rel="stylesheet"><link href="https://dl.dropbox.com/s/50g6fbds3rh4m0j/saturnicons.css" rel="stylesheet"><!-- tooltips --><script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script><script>
+    (function($){
+        $(document).ready(function(){
+            $("a[title], img[title]").style_my_tooltips({
+                tip_follows_cursor:true,
+                tip_delay_time:30,
+                tip_fade_speed:300,
+                attribute:"title"
+            });
+        });
+    })(jQuery);
+</script><!-- photosets --><script src="https://static.tumblr.com/qudkd6d/Az6nkemqr/pxuphotoset.min.js"></script><script>
+    $(document).ready(function(){
+       $('.photo-slideshow').pxuPhotoset({
+           lightbox: true,
+           rounded: false,
+           gutter: '1px',
+           borderRadius: '0px',
+           photoset: '.photo-slideshow',
+           photoWrap: '.photo-data',
+           photo: '.pxu-photo'
+       });
+    });
+</script><!-- popup --><script>
+$(document).ready(function() {
+    $('#trigger-about').click(function() {
+        $('.entries').fadeOut();
+        $('.popup').fadeOut();
+        $('.pop-about').fadeIn();
+    });
+    
+    $('#trigger-muses').click(function() {
+        $('.entries').fadeOut();
+        $('.popup').fadeOut();
+        $('.pop-muses').fadeIn();
+    });
+    
+    $('#trigger-nav').click(function() {
+        $('.entries').fadeOut();
+        $('.popup').fadeOut();
+        $('.pop-nav').fadeIn();
+    });
+    
+    $('.popup .close').click(function() {
+        $('.popup').fadeOut();
+        $('.entries').fadeIn();
+    });
+});
+</script><style type="text/css">
+
+/* ---  tumblr controls styling by cyantists
+        http://cyantists.tumblr.com/tumblr_controls/hover --- */
+
+iframe.tmblr-iframe {
+    z-index:99999999999999!important;
+    top:-2px!important;
+    right:0!important;
+    opacity:0;
+    padding-right:38px;
+    /* delete invert(1) from here */
+        filter:invert(1) contrast(150%);
+        -webkit-filter:invert(1) contrast(150%);
+        -o-filter:invert(1) contrast(150%);
+        -moz-filter:invert(1) contrast(150%);
+        -ms-filter:invert(1) contrast(150%);
+    /* to here if your blog has a dark background */
+    transform:scale(0.65);
+    transform-origin:100% 0;
+    -webkit-transform:scale(0.65);
+    -webkit-transform-origin:100% 0;
+    -o-transform:scale(0.65);
+    -o-transform-origin:100% 0;
+    -moz-transform:scale(0.65);
+    -moz-transform-origin:100% 0;
+    -ms-transform:scale(0.65);
+    -ms-transform-origin:100% 0;}
+
+iframe.tmblr-iframe:hover {
+    opacity:0.6!important;}
+
+.hcontrols {
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:999999999;}
+
+.hcontrols svg {
+    width:14px;
+    height:14px;
+    padding:9px;}
+
+.hcontrols svg path {
+    fill:#888888;/* change this to change the color of the icon */}
+
+/* --- tooltips & scrollbars --- */
+
+#s-m-t-tooltip {
+    position:absolute;
+    margin-top: 15px;
+    z-index:999999;
+    padding:5px 10px;
+    background:#ffffff;
+    color:#4f4e4e;
+    font-size:11px;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.05);
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb {background-color:#eeeeee; border:2px solid #ffffff;}
+::-webkit-scrollbar {background-color:transparent; width:5px; height:5px;}
+
+/* --- basics --- */
+
+body {
+    background-color:#ffffff;
+    background-image:url('https://66.media.tumblr.com/56bb2bb7fa26054d81728666c71a0558/cc374364f1fd64bd-9d/s2048x3072/2606228da3ebacdebbd98aef0c562e9284a2dced.png');
+    background-attachment:fixed;
+    background-position:center center;
+    
+    
+    background-repeat:repeat;
+    background-size:auto;
+    
+    color:#4f4e4e;
+    font-family: 'Helvetica', sans-serif;
+    font-size:11px;
+    line-height:calc(11px + 6px);
+    font-weight:300;
+    text-align:justify;
+    margin:0;
+}
+
+a {
+    color:#4f4e4e;
+    text-decoration:none;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+    a:hover {
+        color:#4f4e4e;
+        text-decoration:none;
+    }
+    
+p a, .description a {box-shadow:#b47f5f 0px -1px 0px inset;}
+p a:hover, .description a:hover {box-shadow:#b47f5f 0px -17px 0px inset;}
+
+img {
+    border:none;
+    text-decoration:none;
+}
+
+b, strong, bold {
+    font-weight:700;
+}
+
+i, em, italic {
+}
+
+u {
+    text-decoration:none;
+}
+
+    .firstletter, u {
+        display:block;
+        float:left;
+        padding:14px 12px;
+        background:#b47f5f;
+        color:#ffffff;
+        font-weight:700;
+        text-transform:uppercase;
+        font-size:calc(11px + 4px);
+        margin:0px 10px 0px 0px;
+    }
+
+s, strike {
+    text-decoration-color:#99b5b8;
+}
+
+small, sub, sup, big {
+    font-size:11px;
+    line-height:calc(11px + 6px);
+    vertical-align:baseline;
+}
+
+blockquote {
+    padding:0px 5px 0px 15px;
+    border-left:1px solid #eeeeee;
+    margin-left:5px;
+    margin-right:0px;
+}
+
+    blockquote img {
+        max-width:360px;
+        height:auto;
+    }
+    
+        blockquote blockquote {
+            margin-right:0px;
+        }
+        
+            blockquote blockquote img {
+                max-width:350px;
+                height:auto;
+                margin-top:10px;
+            }
+
+pre {
+    font-family: 'Helvetica', sans-serif;
+    font-size:calc(11px + 2px);
+    font-weight:700;
+    padding:10px;
+    background-color:#4f4e4e;
+    color:#ffffff;
+    border-radius:10px;
+    margin:0px;
+}
+
+    pre i, pre em, pre b, pre strong, pre a {
+        color:#ffffff;
+    }
+
+ul {
+    padding-left:15px;
+}
+
+    ul li {
+        list-style-type:none;
+    }
+    
+        ul li:before {
+          content: "— ";
+          text-indent: -5px;
+        }
+
+/* --- header styles --- */
+
+h1 {
+    margin:0px 0px 10px 0px;
+    font-weight:bold;
+    color:#99b5b8;
+    text-align:left;
+}
+
+h2 {
+    font-weight:normal;
+    color:#99b5b8;
+    text-align:left;
+    text-transform:uppercase;
+    font-size:calc(11px + 2px);
+    letter-spacing:1px;
+    word-spacing:2px;
+}
+
+    h2 b, b h2, h2 i, i h2,
+    h2 strong, strong h2, h2 em, em h2 {
+        color:#99b5b8;
+    }
+
+/* --- container --- */
+
+.container {
+    position:absolute;
+    margin-top:-310px;
+    top:50%;
+    left:50%;
+    
+    margin-left:-550px;
+    width:1100px;
+    
+    
+    height:620px;
+    background-color:rgba(250,250,250,0.8);
+    overflow:hidden;
+    border-radius:10px;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.1);
+}
+
+.top-title {
+    position:absolute;
+    z-index:99999;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:40px;
+    line-height:40px;
+    color:#ffffff;
+    font-family: 'DM Mono', monospace;
+    font-size:calc(11px + 4px);
+    font-weight:500;
+    letter-spacing:1px;
+    word-spacing:2px;
+    box-sizing:border-box;
+    padding:0px 15px 0px 20px;
+    background-color:#b47f5f;
+}
+
+    .top-title a {
+        cursor:pointer;
+        color:#ffffff;
+        font-size:calc(11px + 2px);
+        margin:0px 5px 0px 5px;
+        font-weight:300;
+    }
+    
+    .top-title a:hover {
+        font-weight:500;
+    }
+
+/* --- sidebar --- */
+
+.sidebar {
+    position:absolute;
+    top:50px;
+    left:0px;
+    width:500px;
+    height:570px;
+}
+
+.side-img {
+    position:absolute;
+    z-index:60;
+    top:90px;
+    left:50px;
+    width:250px;
+    height:340px;
+    border-radius:10px;
+    border-bottom:15px solid #bdb197;
+    background-image:url('https://66.media.tumblr.com/b5f61e6330dadd18a8f57dd213d5b96b/cc374364f1fd64bd-73/s2048x3072/75dbe480818f5c8429747003d80b72e43d3871c2.jpg');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.1);
+}
+
+.description {
+    position:absolute;
+    z-index:100;
+    top:170px;
+    left:245px;
+    width:190px;
+    height:100px;
+    border-radius:10px;
+    overflow:auto;
+    padding:20px 10px 20px 20px;
+    border-left:10px solid #99b5b8;
+    border-right:10px solid #ffffff;
+    background-color:#ffffff;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.1);
+}
+    
+.circle {
+    position:absolute;
+    z-index:1;
+    border-radius:300px;
+}
+
+    .circle-1 {
+        top:20px;
+        left:20px;
+        width:230px;
+        height:230px;
+        background-color:#bdb197;
+    }
+    
+    .circle-2 {
+        top:210px;
+        left:140px;
+        width:300px;
+        height:300px;
+        background-color:#99b5b8;
+    }
+    
+    .circle-3 {
+        top:70px;
+        left:240px;
+        width:150px;
+        height:150px;
+        background:transparent;
+        border:1px solid #4f4e4e;
+    }
+    
+        .circle-3:after {
+            content:'';
+            position:absolute;
+            top:10px;
+            right:-30px;
+            width:50px;
+            height:50px;
+            border-radius:100px;
+            border:2px solid #4f4e4e;
+        }
+    
+    .circle-4 {
+        top:410px;
+        left:320px;
+        width:120px;
+        height:120px;
+        background:transparent;
+        border:2px solid #4f4e4e;
+    }
+    
+        .circle-4:after {
+            content:'';
+            position:absolute;
+            top:-20px;
+            left:-30px;
+            width:70px;
+            height:70px;
+            border-radius:100px;
+            border:1px solid #4f4e4e;
+        }
+        
+.line-1 {
+    position:absolute;
+    width:10px;
+    height:120px;
+    top:-10px;
+    left:440px;
+    background-color:#99b5b8;
+}
+
+.line-2 {
+    position:absolute;
+    width:10px;
+    height:90px;
+    bottom:0px;
+    left:90px;
+    background-color:#b47f5f;
+}
+
+/* --- pagination --- */
+
+.pagination {
+    
+    width:440px;
+    
+    
+    height:20px;
+    left:0px!important;
+    margin-top:-20px;
+    text-align:center;
+    padding:0px 0px 40px 0px!important;
+    color:#4f4e4e;
+}
+
+    .pagination a {
+        color:#4f4e4e;
+        line-height:20px;
+    }
+    
+    .pagination .sf {
+        font-size:7px;
+    }
+ 
+/* --- entries --- */
+
+.entries {
+    position:absolute;
+    z-index:3;
+    top:40px;
+    right:0px;
+    
+    width:600px;
+    
+    
+    height:580px;
+    overflow:auto;
+    background-color:transparent;
+    box-sizing:border-box;
+    padding:75px 80px 0px 80px;
+}
+
+/* --- posts --- */
+
+.post {
+    position:relative;
+    z-index:50;
+    
+    width:400px;
+    
+    
+    padding:20px;
+    
+    margin-bottom:75px;
+    
+    
+    background-color:#ffffff;
+    border-radius:10px;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.1);
+}
+
+    .post img {
+        max-width:100%;
+        height:auto;
+    }
+
+/* --- texts --- */
+
+.title {
+    font-weight:normal;
+    font-size:calc(11px + 12px);
+    line-height:calc(11px + 14px);
+    color:#ffffff;
+    text-align:center;
+    margin:-20px -20px 20px -20px;
+    padding:20px;
+    background-color:#4f4e4e;
+    text-transform:lowercase;
+    font-weight:700;
+    letter-spacing:1px;
+    border-radius:10px 10px 0px 0px;
+}
+    
+    .title a {
+        color:#ffffff;
+    }
+
+.more a {
+    font-size:calc(11px + 8px);
+    color:#99b5b8;
+}
+
+.txt img {
+    border-radius:3px;
+    
+    max-width:200px;
+    float:left;
+    margin-right:10px;
+    
+}
+
+.txt blockquote img {
+    
+    float:right;
+    margin-left:10px;
+    margin-right:0px;
+    
+}
+
+    .txt blockquote blockquote img {
+        
+        float:left;
+        margin-left:0px;
+        margin-right:10px;
+        margin-top:0px;
+        
+    }
+
+/* --- photos --- */
+
+.photo {
+    margin:-20px -20px 0px -20px;
+    border-radius:10px 10px 0px 0px;
+    overflow:hidden;
+}
+
+    .photo img {
+        display:block;
+    }
+    
+.photo-slideshow {
+    margin:-20px -20px 0px -20px;
+    border-radius:10px 10px 0px 0px;
+    overflow:hidden;
+}
+
+    .photo-slideshow img {
+        border-radius:0px;
+    }
+
+/* --- quotes --- */
+
+.quote {
+    text-align:left;
+    font-size:calc(11px + 8px);
+    line-height:calc(11px + 15px);
+    font-weight:700;
+}
+
+.source {
+    margin-top:4px;
+    text-align:right;
+}
+
+/* --- audio --- */
+
+.audio {
+    float:left;
+    width:70px;
+    height:70px;
+    position:relative;
+    overflow:hidden;
+}
+
+    .audio:hover .play {opacity:1;width:30px;}
+    .audio:hover img {margin-left:30px;}
+ 
+.cover img {
+    width:70px;
+    position:absolute;
+    transition:0.5s ease;
+}
+ 
+.play {
+    overflow:hidden;
+    width:0px;
+    height:30px;
+    background:#ffffff;
+    position:absolute;
+    padding:20px 0px;
+    transition:0.5s ease;
+}
+ 
+.au b {
+    color:#99b5b8;
+    font-weight:700;
+    margin-right:2px;
+}
+ 
+.au {
+    height:45px;
+    overflow:hidden;
+    padding:12px 10px;
+    line-height:calc(11px + 5px);
+    margin-left:70px;
+    text-align:left;
+}
+
+/* --- asks --- */
+
+.question {
+    margin:-20px -20px 20px -20px;
+    padding:20px;
+    background-color:#4f4e4e;
+    color:#ffffff;
+    border-radius:10px 10px 0px 0px;
+}
+
+    .asker {
+        float:left;
+        margin-right:2px;
+        color:#ffffff;
+        font-weight:700;
+        text-transform:lowercase;
+    }
+
+    .question p {display:inline;}
+
+/* --- chat --- */
+
+.chat .txt {
+    padding:0px;
+}
+
+.chat .title {
+    margin-bottom:20px;
+}
+ 
+.chat ul {
+    list-style-type:none;
+    padding-left:0px;
+    margin:-20px -20px -20px -20px;
+    overflow:hidden;
+    border-radius:10px;
+}
+ 
+    .chat ul li:before {
+        content: none;
+        text-indent: 0px;
+    }
+   
+    .chat ul li {
+        box-sizing:border-box;
+        padding:10px;
+        background-color:#fafafa;
+    }
+    
+    .chat ul li:nth-of-type(odd) {
+        background-color:rgba(255,255,255,0.5);
+    }
+   
+    .chat .label {
+        text-transform:uppercase;
+        font-weight:700;
+    }
+
+/* --- permalinks --- */
+
+.permalink-date {
+    position:absolute;
+    margin:-10px 0px 0px -50px;
+    width:25px;
+    height:50px;
+    font-size:12px;
+    text-align:center;
+}
+
+    .permalink-date a {
+        display:block;
+        margin:0px 0px 5px 0px;
+        color:#99b5b8;
+    }
+
+/* --- post source --- */
+
+.post-source {
+    z-index:10;
+    text-align:center;
+    font-weight:300;
+    font-family: 'DM Mono', monospace;
+    margin:20px -20px -20px -20px;
+    padding:10px;
+    color:#4f4e4e;
+    border-top:1px solid #eeeeee;
+    transition:all ease 0.5s;
+}
+
+    .post-source a {
+        border-bottom:1px solid transparent;
+        padding-bottom:1px;
+    }
+    
+    .post-source a:hover {
+        border-bottom:1px solid #4f4e4e;
+    }
+
+/* --- tags --- */
+
+.tags {
+    z-index:10;
+    text-align:center;
+    font-weight:300;
+    font-family: 'DM Mono', monospace;
+    margin:-75px 20px 75px 20px;
+    padding:10px;
+    border-radius:0px 0px 10px 10px;
+    color:#4f4e4e;
+    background-color:rgba(255,255,255,0.5);
+    box-shadow:0px 0px 5px rgba(0,0,0,0.1);
+    transition:all ease 0.5s;
+}
+ 
+    .tags a {
+        display:inline;
+        text-transform:none;
+        line-height:calc(11px + 4px);
+        padding-bottom:1px;
+        margin:2px 4px 0px 0px;
+        color:#4f4e4e;
+        border-bottom:1px solid transparent;
+    }
+    
+        .tags a:hover {
+            border-bottom:1px solid #4f4e4e;
+        }
+
+/* --- notes --- */
+
+.pagenotes {
+    
+    display: none!important;
+    
+    
+    width:400px;
+    
+    
+    text-align:left;
+    background-color:#ffffff;
+    padding:20px;
+    margin:50px 0px 75px 0px;
+    border-radius:10px;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.1);
+}
+
+    .pagenotes img {
+        display:none;
+    }
+    
+    .pagenotes a {
+        color:#99b5b8;
+        font-weight:bold;
+    }
+    
+    .pagenotes ol {
+        list-style-type:none;
+        margin:0px;
+        padding:0px;
+    }
+    
+    .pagenotes ol li {
+        margin:5px;
+    }
+    
+/* --- popups --- */
+
+.popup {
+    display:none;
+    position:absolute;
+    z-index:999;
+    top:40px;
+    right:0px;
+    
+    width:600px;
+    
+    
+    height:580px;
+}
+
+    .popup .close {
+        position:absolute;
+        z-index:999;
+        top:10px;
+        right:10px;
+        font-size:18px;
+        cursor:pointer;
+    }
+    
+/* --- popups: about --- */
+
+.about-img {
+    position:absolute;
+    z-index:100;
+    top:30px;
+    
+    left:330px;
+    
+    
+    width:220px;
+    height:220px;
+    border-radius:200px;
+    background-image:url('https://66.media.tumblr.com/af017336778e847beaa86da76f4adf1e/cc374364f1fd64bd-29/s2048x3072/c5cea5e5ef7b5023976b67eca1623a02bd50d617.jpg');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.1);
+}
+
+    .about-img:before {
+        content:'';
+        position:absolute;
+        top:-10px;
+        left:130px;
+        width:70px;
+        height:70px;
+        border-radius:200px;
+        border:2px solid #4f4e4e;
+    }
+
+    .about-img:after {
+        content:'';
+        position:absolute;
+        top:-5px;
+        left:-5px;
+        width:185px;
+        height:185px;
+        border-radius:200px;
+        border:1px solid #4f4e4e;
+    }
+    
+.about-circle-1 {
+    z-index:3;
+    top:-110px;
+    left:170px;
+    
+    left:170px;
+    
+    
+    width:270px;
+    height:270px;
+    background-color:#bdb197;
+}
+
+.about-circle-2 {
+    z-index:4;
+    top:-70px;
+    
+    left:430px;
+    
+    
+    width:150px;
+    height:150px;
+    background-color:#99b5b8;
+}
+
+.about-song {
+    position:absolute;
+    z-index:120;
+    top:110px;
+    left:70px;
+    
+    width:280px;
+    
+    
+    height:60px;
+    padding:10px;
+    border-radius:10px;
+    background-color:#ffffff;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.1);
+    border-right:10px solid #99b5b8;
+    text-align:left;
+    display:flex;
+    align-items:center;
+}
+
+    .about-song img {
+        float:left;
+        margin:5px 10px 5px 0px;
+        width:60px;
+        height:60px;
+        border-radius:10px;
+    }
+    
+    .about-song span {
+        font-family: 'DM Mono', monospace;
+        text-transform:uppercase;
+        font-weight:300;
+    }
+    
+    .about-song b {
+        font-size:calc(11px + 6px);
+        color:#b47f5f;
+    }
+    
+    .about-song i {
+        font-style:normal;
+        font-weight:bold;
+    }
+    
+.about-title {
+    position:absolute;
+    z-index:150;
+    top:50px;
+    left:20px;
+    
+    width:360px;
+    
+    
+    height:auto;
+    text-align:right;
+    font-family: 'DM Mono', monospace;
+    font-size:calc(11px + 20px);
+    line-height:calc(11px + 24px);
+    font-weight:500;
+}
+
+    .about-title:after {
+        content:'';
+        position:absolute;
+        z-index:-1;
+        right:-10px;
+        top:160px;
+        width:120px;
+        height:10px;
+        background-color:#b47f5f;
+    }
+
+.about-text {
+    position:absolute;
+    z-index:130;
+    top:240px;
+    left:130px;
+    
+    width:350px;
+    
+    
+    height:250px;
+    padding:20px 10px 20px 20px;
+    overflow:auto;
+    border-radius:10px;
+    background-color:#ffffff;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.1);
+    border-right:10px solid transparent;
+}
+
+/* --- popups: muses --- */
+
+.muses-circle-1 {
+    z-index:10;
+    bottom:-50px;
+    right:-90px;
+    width:320px;
+    height:320px;
+    background-color:#bdb197;
+}
+
+.muses-circle-2 {
+    z-index:15;
+    bottom:160px;
+    right:20px;
+    width:160px;
+    height:160px;
+    border:1px solid #4f4e4e;
+}
+
+    .muses-circle-2:after {
+        content:'';
+        position:absolute;
+        top:120px;
+        left:0px;
+        width:60px;
+        height:60px;
+        border-radius:100px;
+        border:2px solid #4f4e4e;
+    }
+
+.muses-circle-3 {
+    z-index:12;
+    bottom:80px;
+    right:110px;
+    width:200px;
+    height:200px;
+    background-color:#99b5b8;
+}
+
+    .muses-circle-3:after {
+        content:'';
+        position:absolute;
+        top:220px;
+        left:-15px;
+        width:120px;
+        height:10px;
+        background-color:#b47f5f;
+    }
+
+.muses-c {
+    position:absolute;
+    z-index:100;
+    top:0px;
+    right:0px;
+    
+    width:550px;
+    
+    
+    height:580px;
+    box-sizing:border-box;
+    padding:40px;
+    overflow:auto;
+}
+
+    .muses-c a img {
+        display:inline-block;
+        margin:10px;
+        width:90px;
+        height:90px;
+        border-radius:50px;
+        box-shadow:0px 0px 5px rgba(0,0,0,0.1);
+        transition:all ease 0.5s;
+    }
+    
+    .muses-c a:hover img {
+        transform:scale(1.2,1.2);
+    }
+    
+/* --- popups: navigation --- */
+
+.nav-circle-1 {
+    z-index:1;
+    top:-80px;
+    right:-100px;
+    width:250px;
+    height:250px;
+    background-color:#99b5b8;
+}
+
+.nav-circle-2 {
+    z-index:2;
+    top:80px;
+    right:-50px;
+    width:160px;
+    height:160px;
+    border:2px solid #4f4e4e;
+}
+
+    .nav-circle-2:after {
+        content:'';
+        position:absolute;
+        top:20px;
+        left:-40px;
+        width:70px;
+        height:70px;
+        border:1px solid #4f4e4e;
+        border-radius:100px;
+    }
+
+.nav-title {
+    position:absolute;
+    z-index:100;
+    bottom:490px;
+    right:100px;
+    
+    width:400px;
+    
+    
+    height:auto;
+    text-align:right;
+    font-family: 'DM Mono', monospace;
+}
+
+    .nav-title:after {
+        content:'';
+        position:absolute;
+        z-index:-1;
+        right:15px;
+        top:7px;
+        width:120px;
+        height:10px;
+        background-color:#bdb197;
+    }
+
+.nav-links {
+    position:absolute;
+    z-index:150;
+    top:120px;
+    left:50px;
+    
+    width:450px;
+    
+    
+    height:410px;
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    flex-wrap:wrap;
+}
+
+    .nav-links a {
+        margin:10px;
+        
+        width:150px;
+        
+        
+        height:40px;
+        padding:20px;
+        background-color:#ffffff;
+        border-radius:10px;
+        border-left:10px solid #b47f5f;
+        box-shadow:0px 0px 5px rgba(0,0,0,0.1);
+        display:flex;
+        align-items:center;
+    }
+    
+    .nav-links a b {
+        display:block;
+        font-family: 'DM Mono', monospace;
+        font-size:calc(11px + 4px);
+        color:#b47f5f;
+        word-spacing:-5px;
+    }
+    
+    .nav-links a:hover {
+        transform:scale(1.2,1.2);
+    }
+
+/* --- credit --- */
+
+.credit a {
+    position:fixed;
+    font-size:14px;
+    right:10px;
+    bottom:10px;
+    text-align:center;
+    width:15px;
+    height:15px;
+    line-height:15px;
+    color:#99b5b8;
+}
+
+
+
+
+</style><script src="https://assets.tumblr.com/assets/scripts/tumblelog_post_message_queue.js?_v=a8fadfa499d8cb7c3f8eefdf0b1adfdd"></script><!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. --><!-- Read more: http://ogp.me/ --><meta property="fb:app_id" content="48119224995" /><meta property="og:site_name" content="Tumblr" /><meta property="og:title" content="Tumblr" /><meta property="og:url" content="https://pirateskinned.tumblr.com/themes/42" /><meta property="og:type" content="article" /><meta property="og:determiner" content="a" /><meta property="al:ios:url" content="tumblr://x-callback-url/blog?blogName=pirateskinned&amp;postID=" /><meta property="al:ios:app_name" content="Tumblr" /><meta property="al:ios:app_store_id" content="305343404" /><meta property="al:android:url" content="tumblr://x-callback-url/blog?blogName=pirateskinned&amp;postID=" /><meta property="al:android:app_name" content="Tumblr" /><meta property="al:android:package" content="com.tumblr" /><!-- END TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:site" content="tumblr" /><meta name="twitter:card" content="summary" /><meta name="twitter:description" content="pirateskinned" /><meta name="twitter:title" content="pirateskinned" /><meta name="twitter:app:name:iphone" content="Tumblr" /><meta name="twitter:app:name:ipad" content="Tumblr" /><meta name="twitter:app:name:googleplay" content="Tumblr" /><meta name="twitter:app:id:iphone" content="305343404" /><meta name="twitter:app:id:ipad" content="305343404" /><meta name="twitter:app:id:googleplay" content="com.tumblr" /><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=pirateskinned&amp;referrer=twitter-cards" /><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=pirateskinned&amp;referrer=twitter-cards" /><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=pirateskinned&amp;referrer=twitter-cards" /><link rel="canonical" href="https://pirateskinned.tumblr.com/themes/42" /></head><body><div class="hcontrols"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 216 216" enable-background="new 0 0 216 216" xml:space="preserve"><path d="M106.6,134c14.3,0,26-11.7,26-26s-11.7-26-26-26s-26,11.7-26,26S92.2,134,106.6,134z M106.6,94c7.7,0,14,6.3,14,14s-6.3,14-14,14s-14-6.3-14-14S98.9,94,106.6,94z M40.4,124.6l7.2,3.3c3,1.4,4.4,4.8,3.3,7.9l-2.8,7.4c-2.1,5.7-1.4,11.8,2.1,16.7c3.4,5,9,7.9,15,7.9c2.2,0,4.4-0.4,6.5-1.2l7.4-2.8c0.7-0.3,1.4-0.4,2.2-0.4c2.4,0,4.7,1.4,5.7,3.7l3.3,7.2c3,6.6,9.4,10.7,16.6,10.7s13.6-4.1,16.6-10.7l3.3-7.2c1-2.2,3.2-3.7,5.7-3.7c0.7,0,1.5,0.1,2.2,0.4l7.4,2.8c2.1,0.8,4.3,1.2,6.5,1.2c0,0,0,0,0,0c5.9,0,11.5-3,15-7.9c3.4-5,4.2-11.1,2.1-16.7l-2.8-7.4c-1.1-3.1,0.3-6.5,3.3-7.9l7.2-3.3c6.6-3,10.7-9.4,10.7-16.6s-4.1-13.6-10.7-16.6l-7.2-3.3c-3-1.4-4.4-4.8-3.3-7.9l2.8-7.4c2.1-5.7,1.4-11.8-2.1-16.7c-3.4-5-9-7.9-15-7.9c-2.2,0-4.4,0.4-6.5,1.2l-7.4,2.8c-0.7,0.3-1.4,0.4-2.2,0.4c-2.4,0-4.7-1.4-5.7-3.7l-3.3-7.2c-3-6.6-9.4-10.7-16.6-10.7S93,35.2,90,41.8l-3.3,7.2c-1,2.2-3.2,3.7-5.7,3.7c-0.7,0-1.5-0.1-2.2-0.4l-7.4-2.8c-2.1-0.8-4.3-1.2-6.5-1.2c-5.9,0-11.5,3-15,7.9c-3.4,5-4.2,11.1-2.1,16.7l2.8,7.4c1.1,3.1-0.3,6.5-3.3,7.9l-7.2,3.3c-6.6,3-10.7,9.4-10.7,16.6S33.8,121.6,40.4,124.6z M45.3,102.3l7.2-3.3c8.7-4,12.9-14.1,9.5-23l-2.8-7.4c-1-2.7,0-4.7,0.7-5.7c1.6-2.4,4.6-3.4,7.4-2.3l7.4,2.8c2.1,0.8,4.2,1.2,6.4,1.2c0,0,0,0,0,0c7.1,0,13.6-4.2,16.6-10.7l3.3-7.2c1.5-3.4,4.7-3.7,5.7-3.7s4.1,0.3,5.7,3.7l3.3,7.2c3,6.5,9.5,10.7,16.6,10.7c2.2,0,4.3-0.4,6.4-1.2l7.4-2.8c2.8-1,5.7,0,7.4,2.3c0.7,1,1.7,3,0.7,5.7l-2.8,7.4c-3.3,8.9,0.8,19,9.5,23l7.2,3.3c3.4,1.5,3.7,4.7,3.7,5.7s-0.3,4.1-3.7,5.7l-7.2,3.3c-8.7,4-12.9,14.1-9.5,23l2.8,7.4c1,2.7,0,4.7-0.7,5.7c-1.6,2.4-4.6,3.4-7.4,2.3l-7.4-2.8c-2.1-0.8-4.2-1.2-6.4-1.2c-7.1,0-13.6,4.2-16.6,10.7l-3.3,7.2c-1.5,3.4-4.7,3.7-5.7,3.7s-4.1-0.3-5.7-3.7l-3.3-7.2c-3-6.5-9.5-10.7-16.6-10.7c-2.2,0-4.3,0.4-6.4,1.2l-7.4,2.8c-2.8,1-5.7,0-7.4-2.3c-0.7-1-1.7-3-0.7-5.7l2.8-7.4c3.3-8.9-0.8-19-9.5-23l-7.2-3.3c-3.4-1.5-3.7-4.7-3.7-5.7S41.9,103.9,45.3,102.3z"/></svg></div><div class="container"><div class="top-title">
+    can you feel not alone?
+    
+    <div style="float:right; margin-top:-2px;"><a href="/">
+            home
+        </a>
+        |
+        <a href="/ask">
+            message
+        </a>
+        
+        |
+        <a id="trigger-about">
+            about
+        </a>
+        
+        
+        |
+        <a id="trigger-muses">
+            muses
+        </a>
+        
+        
+        |
+        <a id="trigger-nav">
+            navigate
+        </a></div></div><!-- sidebar --><div class="sidebar"><div class="circle circle-1"></div><div class="circle circle-2"></div><div class="circle circle-3"></div><div class="circle circle-4"></div><div class="line-1"></div><div class="line-2"></div><div class="side-img"></div><div class="description"><u>L</u>orem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis felis, lacinia sit amet eros vel, egestas suscipit tellus. <b>Fusce non dolor quis libero sagittis.</b> Mauris non euismod nisi.
+    </div></div><!-- start of posts --><div class="entries"><div class="post" id="621981770554998784"><div class="permalink-date"><a href="/" title="posted 2 hours ago"><span class="sf sf-circle"></span></a><a href="/" title="6 notes" style="color:#bdb197;"><span class="sf sf-circle"></span></a></a><a href="/" title="reblog" style="color:#b47f5f;"><span class="sf sf-circle"></span></a></div><div class="txt"><pre><a href="/">somecoolusername</a>:</pre><blockquote><figure data-orig-width="100" data-orig-height="100"><img src="https://66.media.tumblr.com/2c9683f2c65681ab9ed2f92fe6b8f99d/7384c83a5f6f005a-a9/s100x200/7267e2fe54cdb23ac4ce303e3e12fdce67a98fc5.jpg" alt="image" data-orig-height="100" data-orig-width="100" width="100" height="100" /></figure><p><b>Proin pulvinar leo at facilisis porta.</b><small> Duis at nibh metus. Nunc a orci elit. Praesent sit amet ex porta, vulputate mauris a, auctor lacus. Sed sagittis, eros in blandit mollis, metus est consequat lectus, hendrerit molestie eros nisl vitae risus. Orci varius natoque penatibus et magnis dis <b>parturient</b> montes, nascetur ridiculus mus. In ornare urna vitae metus sodales, a imperdiet eros auctor. <b>&ldquo;</b>Nunc sodales leo id libero vestibulum consectetur.<b>&rdquo;</b> Sed commodo maximus elit vitae luctus. Mauris finibus lacus sit amet lorem vehicula, non dapibus massa vehicula. Cras vel aliquam ex, vel porttitor enim. Nulla varius faucibus rhoncus.<br /></small></p><p><small>Mauris id sapien ut metus blandit ullamcorper. Aenean a lorem facilisis, lacinia eros vitae, mollis nisi. Sed neque justo, <i>malesuada</i> a commodo eu, maximus sit amet nisi. Nulla vitae cursus mi, eu convallis mi. Proin nec cursus turpis. <b>&ldquo;</b>Integer a mauris a libero laoreet porttitor. Morbi vitae blandit diam. Morbi pretium mattis purus, vel pretium augue placerat id. Vestibulum faucibus finibus tincidunt. <i>Ut in massa felis</i>.<b>&rdquo;</b> Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras tristique nunc nec malesuada vehicula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <b>&ldquo;</b>Vivamus pharetra ultrices urna.<b>&rdquo;</b> Pellentesque fringilla non purus non feugiat.</small><br /></p></blockquote><figure data-orig-width="110" data-orig-height="110"><img src="https://66.media.tumblr.com/0868e3a26b4fc4795c0a5465fdb55bae/7384c83a5f6f005a-fd/s250x400/e9ba74d30912a83da243805713476d54bc906fa9.png" alt="image" data-orig-height="110" data-orig-width="110" width="110" height="110" /></figure><p><sub>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strike>&mdash;&mdash;</strike>&nbsp; &#9790;&nbsp; Praesent interdum <i>accumsan</i> ultrices. <b>PHASELLUS</b> posuere et magna a ultricies. Maecenas bibendum <b>accumsan</b> porta. &#10077; Suspendisse a lorem tempor, tincidunt nisi et, volutpat elit. &#10078; Proin sem ipsum, faucibus eget convallis eu, condimentum sit amet ex. Praesent eleifend malesuada tristique. Aliquam <b>ENIM ENIM</b>, placerat ut egestas id, euismod quis leo.</sub></p><p><sub>Aenean ut rhoncus risus, at ornare <b>PURUS</b>. Pellentesque eu nibh at lorem laoreet facilisis. Pellentesque eros metus, tincidunt sed neque ac, molestie semper dui. Praesent in lorem molestie,&nbsp; <b>e u i s m o d</b>&nbsp; leo in, mattis dolor. <i>Curabitur rhoncus dui id viverra dignissim.</i> Pellentesque eleifend elementum accumsan. Fusce consequat et dolor vitae pellentesque. Proin feugiat rhoncus metus at imperdiet. <b>CRAS MAXIMUS</b> lectus quis nibh gravida, in ornare tortor varius. Ut nec dui nec tortor euismod consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <i>Proin eros erat</i>, maximus eu viverra non, scelerisque in nisl.</sub></p></div></div> <!-- end of .post --><div style="clear:both;"></div><div class="tags"><a href="/">#rp thread</a></div><div class="post" id="621981753818611712"><div class="permalink-date"><a href="/" title="posted 2 hours ago"><span class="sf sf-circle"></span></a><a href="/" title="12,901 notes" style="color:#bdb197;"><span class="sf sf-circle"></span></a></a><a href="/" title="reblog" style="color:#b47f5f;"><span class="sf sf-circle"></span></a></div><div class="chat"><div class="txt"><ul><li><span class="label">me:</span>
+        *cups my muse&#039;s cheeks and whispers* i ship u with happiness</li><li><span class="label">muse:</span>
+        it sure as hell doesn&#039;t feel like it</li></ul></div></div></div> <!-- end of .post --><div style="clear:both;"></div><div class="post" id="621981573355552768"><div class="permalink-date"><a href="/" title="posted 2 hours ago"><span class="sf sf-circle"></span></a><a href="/" title="18,995 notes" style="color:#bdb197;"><span class="sf sf-circle"></span></a></a><a href="/" title="reblog" style="color:#b47f5f;"><span class="sf sf-circle"></span></a></div><div class="txt"><p><a href="http://painterliest.tumblr.com/post/144235917861/concept-i-collect-stars-and-keep-them-alive-in-my" class="tumblr_blog">painterliest</a>:</p><blockquote><p>concept: i collect stars and keep them alive in my pockets. on rainy days they warm my fingers. they whisper up to me &ldquo;you are special, too, you shine just as brightly as us&rdquo;</p></blockquote></div></div> <!-- end of .post --><div style="clear:both;"></div><div class="post" id="181920396686"><div class="permalink-date"><a href="/" title="posted 1 year ago"><span class="sf sf-circle"></span></a><a href="/" title="402 notes" style="color:#bdb197;"><span class="sf sf-circle"></span></a></a><a href="/" title="reblog" style="color:#b47f5f;"><span class="sf sf-circle"></span></a></div><div class="txt"><div class="quote">A kind of light spread out from her. And everything changed color. And the world opened out. And a day was good to awaken to. And there were no limits to anything. And the people of the world were good and handsome. And I was not afraid any more.</div><div class="source"><p>&mdash; <i>East of Eden</i>, <b>John Steinbeck</b><br /></p></div></div></div> <!-- end of .post --><div style="clear:both;"></div><div class="tags"><a href="/">#quote</a></div><div class="post" id="181920366116"><div class="permalink-date"><a href="/" title="posted 1 year ago"><span class="sf sf-circle"></span></a></a><a href="/" title="reblog" style="color:#b47f5f;"><span class="sf sf-circle"></span></a></div><div class="txt"><div class="question"><div class="asker"><a href="https://pirateskinned.tumblr.com/" class="asker">pirateskinned</a></div> said, &ldquo;Lorem ipsum dolor sit amet&rdquo;
+        </div><blockquote><p>Sed nec eleifend lorem. In cursus neque non felis vehicula porttitor. Nulla convallis commodo arcu, non fermentum justo tristique eu. Duis vitae pulvinar massa, id dictum enim. Pellentesque faucibus, tellus id venenatis interdum, purus nisl lobortis lacus, eu molestie ante lorem a arcu.<br /></p></blockquote></div></div> <!-- end of .post --><div style="clear:both;"></div><div class="post" id="181835749226"><div class="permalink-date"><a href="/" title="posted 1 year ago"><span class="sf sf-circle"></span></a><a href="/" title="678 notes" style="color:#bdb197;"><span class="sf sf-circle"></span></a></a><a href="/" title="reblog" style="color:#b47f5f;"><span class="sf sf-circle"></span></a></div><div class="photo-slideshow" id="photoset_181835749226" data-layout="2"><div class="photo-data"><div class="pxu-photo"><img src="https://66.media.tumblr.com/3fbd6e5e5c066b411b6f37b689863eb4/tumblr_p0ikoy3MXZ1wxzdm6o2_1280.png" width="1176" height="1180" data-highres="https://66.media.tumblr.com/3fbd6e5e5c066b411b6f37b689863eb4/tumblr_p0ikoy3MXZ1wxzdm6o2_1280.png" data-width="1176" data-height="1180"></div><a class="tumblr-box" rel="post-181835749226" href="https://66.media.tumblr.com/3fbd6e5e5c066b411b6f37b689863eb4/tumblr_p0ikoy3MXZ1wxzdm6o2_1280.png"></a></div><div class="photo-data"><div class="pxu-photo"><img src="https://66.media.tumblr.com/9de519571e5fe6970d582d4a374c2a07/tumblr_p0ikoy3MXZ1wxzdm6o3_1280.png" width="1182" height="1184" data-highres="https://66.media.tumblr.com/9de519571e5fe6970d582d4a374c2a07/tumblr_p0ikoy3MXZ1wxzdm6o3_1280.png" data-width="1182" data-height="1184"></div><a class="tumblr-box" rel="post-181835749226" href="https://66.media.tumblr.com/9de519571e5fe6970d582d4a374c2a07/tumblr_p0ikoy3MXZ1wxzdm6o3_1280.png"></a></div></div><div class="txt"><p><a href="https://32trbl.tumblr.com/post/168237341244/sohee" class="tumblr_blog">32trbl</a>:</p><blockquote><p><a href="https://t.umblr.com/redirect?z=https%3A%2F%2Fwww.instagram.com%2Fs__o_h_e_e%2F&amp;t=MjI1MWYwMDg3YTA1YzEzZjk5YmQ2ZmQ1NjJkMzMxOWZhOTVhMjQ2Yyx2NEEwMThtcg%3D%3D&amp;b=t%3AxI7oWMLxvf3LlbbzLsnQeA&amp;p=https%3A%2F%2Fpstheme1.tumblr.com%2Fpost%2F181835749226%2F32trbl-sohee&amp;m=1" title="s__o_h_e_e">s__o_h_e_e</a><br /></p></blockquote></div></div> <!-- end of .post --><div style="clear:both;"></div><div class="tags"><a href="/">#photoset</a> <a href="/">#with a cute doggo</a></div><div class="post" id="181833982406"><div class="permalink-date"><a href="/" title="posted 1 year ago"><span class="sf sf-circle"></span></a><a href="/" title="9,133 notes" style="color:#bdb197;"><span class="sf sf-circle"></span></a></a><a href="/" title="reblog" style="color:#b47f5f;"><span class="sf sf-circle"></span></a></div><div class="txt"><p><a href="/" class="tumblr_blog">demo</a>:</p><blockquote><p>Lorem ipsum dolor sit amet, consectetuer <a href="/">adipiscing elit</a>. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.</p></blockquote></div></div> <!-- end of .post --><div style="clear:both;"></div><div class="post" id="181833973666"><div class="permalink-date"><a href="/" title="posted 1 year ago"><span class="sf sf-circle"></span></a><a href="/" title="24,604 notes" style="color:#bdb197;"><span class="sf sf-circle"></span></a></a><a href="/" title="reblog" style="color:#b47f5f;"><span class="sf sf-circle"></span></a></div><div class="title"> An example post </div><div class="txt"><p>Lorem ipsum dolor sit amet, consectetuer <a href="/">adipiscing elit</a>. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.</p><ul><li>Lorem ipsum dolor sit amet.</li><li>Consectetuer adipiscing elit. </li><li>Nam at tortor quis ipsum tempor aliquet.</li></ul><p>Cum sociis <a href="/">natoque penatibus</a> et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.</p><blockquote><p>Donec placerat mauris commodo dolor. Nulla tincidunt. Nulla vitae augue.</p></blockquote><p>Suspendisse ac pede. Cras <a href="/">tincidunt pretium</a> felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.</p></div></div> <!-- end of .post --><div style="clear:both;"></div><div class="tags"><a href="/">#text post with title</a></div></div> <!-- end of entries --><!-- start of popups --><!-- about popup --><div class="popup pop-about"><div class="close"><span class="sf sf-cross-round-o"></span></div><div class="about-img"></div><div class="circle about-circle-1"></div><div class="circle about-circle-2"></div><div class="about-song"><img src="https://66.media.tumblr.com/3a18d82e02ab0df423ebb413c4108703/cc374364f1fd64bd-a7/s2048x3072/a627866b087014fd0374db5934970c307a2ce219.jpg"><div><span>now playing...</span><br><b>not alone</b><br>
+            by <i>NCT 127</i></div></div><div class="about-title">
+        we are never alone
+    </div><div class="about-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non mauris et ipsum finibus gravida in vitae ligula. Nullam sollicitudin eleifend sapien non accumsan. Praesent facilisis, massa a viverra molestie, magna tortor varius nunc, ut semper ligula arcu a sem. Sed auctor cursus odio, vitae sodales dolor auctor vitae. Sed vestibulum dui sit amet ornare vehicula. Donec imperdiet ut mi a mattis. Integer a rhoncus nunc. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+<br><br>
+Vivamus et porta odio, eget gravida tellus. Suspendisse tempus sollicitudin tincidunt. Phasellus urna turpis, vestibulum vitae elit sed, mattis posuere erat. Maecenas ultrices pharetra mauris. Vestibulum laoreet arcu vitae enim semper fringilla. Maecenas vitae tortor varius, pharetra diam eget, sagittis turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+<br><br>
+Duis faucibus, tortor non fermentum posuere, sapien ligula blandit magna, quis vehicula mauris turpis convallis nisl. Nunc maximus, eros sed dapibus eleifend, sem nisl pretium turpis, non commodo dui felis id magna. Aenean tristique non velit ac consequat. Quisque pharetra efficitur malesuada. Etiam elementum porta massa id ornare. In vulputate sem sit amet suscipit vulputate.
+    </div></div><!-- muses popup --><div class="popup pop-muses"><div class="close"><span class="sf sf-cross-round-o"></span></div><div class="circle muses-circle-1"></div><div class="circle muses-circle-2"></div><div class="circle muses-circle-3"></div><div class="muses-c"><a href="/" title="muse name"><img src="https://i.imgur.com/cwJThk0.png"></a><a href="/" title="muse name"><img src="https://i.imgur.com/jQqiNaI.png"></a><a href="/" title="muse name"><img src="https://i.imgur.com/xo3eYrU.png"></a><a href="/" title="muse name"><img src="https://i.imgur.com/vq0nWtt.png"></a><a href="/" title="muse name"><img src="https://i.imgur.com/zDy1dEM.png"></a><a href="/" title="muse name"><img src="https://i.imgur.com/KsoQpw5.png"></a><a href="/" title="muse name"><img src="https://i.imgur.com/y9zRW6W.png"></a><a href="/" title="muse name"><img src="https://i.imgur.com/oxwQ8KL.png"></a><a href="/" title="muse name"><img src="https://i.imgur.com/QUpb7Wh.png"></a><a href="/" title="muse name"><img src="https://i.imgur.com/kPkX8FN.png"></a><a href="/" title="muse name"><img src="https://i.imgur.com/DxTIHDG.png"></a><a href="/" title="muse name"><img src="https://i.imgur.com/1ZDfeqr.png"></a><a href="/" title="muse name"><img src="https://i.imgur.com/3lwXZoa.png"></a><a href="/" title="muse name"><img src="https://i.imgur.com/7X5prEb.png"></a><a href="/" title="muse name"><img src="https://i.imgur.com/9nFoFfk.png"></a><a href="/" title="muse name"><img src="https://i.imgur.com/GnLcMW6.png"></a></div></div><!-- navigate popup --><div class="popup pop-nav"><div class="close"><span class="sf sf-cross-round-o"></span></div><div class="circle nav-circle-1"></div><div class="circle nav-circle-2"></div><div class="nav-title">
+        lorem ipsum dolor sit amet, consectetur adipiscing elit. quisque turpis felis, lacinia sit amet eros vel, egestas suscipit tellus.
+    </div><div class="nav-links"><a href="/"><div><b># 01</b><span>return back home</span></div></a><a href="/"><div><b># 02</b><span>send a message</span></div></a><a href="/"><div><b># 03</b><span>visit the archives</span></div></a><a href="/"><div><b># 04</b><span>follow the blogroll</span></div></a><a href="/"><div><b># 05</b><span>rules and guidelines</span></div></a><a href="/"><div><b># 06</b><span>wanted connections</span></div></a><a href="/"><div><b># 07</b><span>pinterest boards</span></div></a><a href="/"><div><b># 08</b><span>spotify playlists</span></div></a></div></div><!-- end of popups --></div> <!-- end of container --><div class="credit"><a class="sf sf-boat" href="http://pirateskinned.tumblr.com/" title="coded by pirateskinned"></a></div><iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe><script type="text/javascript">
+    (function(){
+        var analytics_frame = document.getElementById('ga_target');
+        var analytics_iframe_loaded;
+        var user_logged_in;
+        var blog_is_nsfw = 'No';
+
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent,function(e) {
+            var message = (e.data && e.data.split) ? e.data.split(';') : '';
+            switch (message[0]) {
+                case 'analytics_iframe_loaded':
+                    analytics_iframe_loaded = true;
+                    postCSMessage();
+                    postGAMessage();
+                    break;
+                case 'user_logged_in':
+                    user_logged_in = message[1];
+                    postGAMessage();
+                    break;
+            }
+        }, false);
+
+        analytics_frame.src = "https://assets.tumblr.com/analytics.html?_v=9f5febfd57a8a649c598d888f2d9e062#" +
+                              "https://pirateskinned.tumblr.com";
+        function postGAMessage() {
+            if (analytics_iframe_loaded && user_logged_in) {
+                var is_ajax = false;
+                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/themes/42?route=custom_page'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postCSMessage() {
+            COMSCORE = true;
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }
+    })();
+</script><script type="text/javascript" nonce="SVE9dpsoIfB0lLG9okLbJryr7k">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1645655608&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDovL3BpcmF0ZXNraW5uZWQudHVtYmxyLmNvbS90aGVtZXMvNDIiLCJyZXF0eXBlIjowLCJyb3V0ZSI6ImN1c3RvbV9wYWdlIn0=&U=BEDGHIAPML&K=b7299adfe2bcd699785831de451065aee82c13d28ae4715c6008809b8076d022&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style=
+<!-- partial -->
+  
+</body>
+</html>
